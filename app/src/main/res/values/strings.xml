@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SecuritySystemAlerts</string>
+    <string name="login_url_hint">Security System Account Login URL</string>
+    <string name="login_url_text">https://simplisafe.com/my-account/login</string>
+    <string name="mobile_operator">Choose Your Mobile Operator</string>
+    <string name="settings_text">Security System Settings</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="email_text">Email Settings</string>
+    <string name="smtp_text">smtp.gmail.com</string>
+    <string name="smtp_hint">SMTP Host Name</string>
+    <string name="port_text">465</string>
+    <string name="port_hint">SMTP Host Port</string>
+    <string name="to_email_hint">To Email</string>
+    <string name="cc_email_hint">Cc Email</string>
+    <string name="sms_text">SMS Settings</string>
+    <string name="to_phone_hint">To Phone Number</string>
+    <string name="cc_phone_hint">Cc Phone Number</string>
+    <string name="apply_text">Apply</string>
+    <string name="event_text">Security System Event Log</string>
+    <string name="event_log_text">Waiting For Connection</string>
+    <string name="logout_text">Logout</string>
+    <string name="exit_text">Exit</string>
+
+    <string-array name="mobile_operators">
+        <item>Choose Your Mobile Operator</item>
+        <item>TMobile</item>
+        <item>Virgin</item>
+        <item>Cingular</item>
+        <item>Sprint</item>
+        <item>Verizon</item>
+        <item>Nextel</item>
+        <item>US Cellular</item>
+        <item>PowerTel</item>
+        <item>SunCom</item>
+        <item>AT&amp;T</item>
+        <item>Alltel</item>
+        <item>Metro PCS</item>
+    </string-array>
+</resources>
