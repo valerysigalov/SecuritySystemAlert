@@ -1,3 +1,19 @@
+/*
+ * Copyright (c) 2015 Valery Sigalov (valery.sigalov@gmail.com)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.app.securitysystemalerts;
 
 import android.app.IntentService;
@@ -82,7 +98,7 @@ public class AlertsService extends IntentService {
         AUTHENTICATION_FAILURE,
         CONNECTION_RETRY,
         SERVICE_EXIT
-    };
+    }
 
     private returnCode status;
 
@@ -247,7 +263,7 @@ public class AlertsService extends IntentService {
 
     private void createSmsMap() {
 
-        smsMap = new HashMap<String, String>();
+        smsMap = new HashMap<>();
 
         smsMap.put("TMobile", "@tmomail.net");
         smsMap.put("Virgin", "@vmobl.com");
@@ -357,7 +373,7 @@ public class AlertsService extends IntentService {
         BufferedReader in =
                 new BufferedReader(new InputStreamReader(conn.getInputStream()));
         String inputLine;
-        StringBuffer response = new StringBuffer();
+        StringBuilder response = new StringBuilder();
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine).append('\n');
         }
@@ -373,7 +389,7 @@ public class AlertsService extends IntentService {
 
         Element loginform = doc.getElementById("user-login");
         Elements inputElements = loginform.getElementsByTag("input");
-        List<String> paramList = new ArrayList<String>();
+        List<String> paramList = new ArrayList<>();
         for (Element inputElement : inputElements) {
             String key = inputElement.attr("name");
             String value = inputElement.attr("value");
